@@ -71,7 +71,7 @@ def get_args():
                         help='Frame width (default:84)')
     parser.add_argument('-fh', '--frame_height', type=int, default=128,
                         help='Frame height (default:84)')
-    parser.add_argument('-el', '--max_episode_length', type=int, default=1000,
+    parser.add_argument('-el', '--max_episode_length', type=int, default=500, #originally 1000
                         help="""Maximum episode length in seconds for
                                 Doom (default: 180)""")
     parser.add_argument("--sim_gpu_id", type=int, default=0,
@@ -194,9 +194,9 @@ def get_args():
                     torch.cuda.get_device_properties(i).total_memory \
                             /1024/1024/1024)
                 if i==0:
+                    print("GPU 0 memory: {}".format(gpu_memory))
                     assert torch.cuda.get_device_properties(i).total_memory \
                             /1024/1024/1024 > 10.0, "Insufficient GPU memory"
-
             num_processes_per_gpu = int(gpu_memory/1.4)
             num_processes_on_first_gpu = int((gpu_memory - 10.0)/1.4)
 

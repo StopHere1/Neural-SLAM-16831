@@ -1,0 +1,755 @@
+INFO:root:Namespace(alpha=0.99, auto_gpu_config=1, camera_height=1.25, clip_param=0.2, collision_threshold=0.2, cuda=True, du_scale=2, dump_location='./tmp/', entropy_coef=0.001, env_frame_height=256, env_frame_width=256, eps=1e-05, eval=1, exp_loss_coeff=1.0, exp_name='exp1', frame_height=128, frame_width=128, gamma=0.99, global_downscaling=4, global_hidden_size=256, global_lr=2.5e-05, goals_size=2, hfov=90.0, load_global='pretrained_models/model_best.global', load_local='pretrained_models/model_best.local', load_slam='pretrained_models/model_best.slam', local_hidden_size=512, local_optimizer='adam,lr=0.0001', local_policy_update_freq=5, log_interval=10, map_pred_threshold=0.5, map_resolution=5, map_size_cm=4800, max_episode_length=500, max_grad_norm=0.5, no_cuda=False, noise_level=1.0, noisy_actions=1, noisy_odometry=1, num_episodes=5, num_global_steps=40, num_local_steps=25, num_mini_batch=4, num_processes=9, num_processes_on_first_gpu=9, num_processes_per_gpu=0, obs_threshold=1, obstacle_boundary=5, pose_loss_coeff=10000.0, ppo_epoch=4, pretrained_resnet=1, print_images=0, proj_loss_coeff=1.0, randomize_env_every=1000, save_interval=1, save_periodic=500000, save_trajectory_data='0', seed=1, short_goal_dist=1, sim_gpu_id=1, slam_batch_size=72, slam_iterations=10, slam_memory_size=500000, slam_optimizer='adam,lr=0.0001', split='val_custom', task_config='tasks/pointnav_gibson.yaml', tau=0.95, total_num_scenes=1, train_global=0, train_local=0, train_slam=0, use_deterministic_local=0, use_gae=False, use_pose_estimation=2, use_recurrent_global=0, use_recurrent_local=1, value_loss_coef=0.5, vis_type=1, vision_range=64, visualize=0)
+INFO:root:Time: 00d 00h 00m 00s, num timesteps 0, FPS 0,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 00s, num timesteps 90, FPS 96,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 01s, num timesteps 180, FPS 101,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 02s, num timesteps 270, FPS 102,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 03s, num timesteps 360, FPS 104,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 04s, num timesteps 450, FPS 104,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 05s, num timesteps 540, FPS 105,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 05s, num timesteps 630, FPS 105,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 06s, num timesteps 720, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 07s, num timesteps 810, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 08s, num timesteps 900, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 09s, num timesteps 990, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 10s, num timesteps 1080, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 10s, num timesteps 1170, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 11s, num timesteps 1260, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 12s, num timesteps 1350, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 13s, num timesteps 1440, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 14s, num timesteps 1530, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 15s, num timesteps 1620, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 16s, num timesteps 1710, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 16s, num timesteps 1800, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 17s, num timesteps 1890, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 18s, num timesteps 1980, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 19s, num timesteps 2070, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 20s, num timesteps 2160, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 21s, num timesteps 2250, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 21s, num timesteps 2340, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 22s, num timesteps 2430, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 23s, num timesteps 2520, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 24s, num timesteps 2610, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 25s, num timesteps 2700, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 26s, num timesteps 2790, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 27s, num timesteps 2880, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 27s, num timesteps 2970, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 28s, num timesteps 3060, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 29s, num timesteps 3150, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 30s, num timesteps 3240, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 31s, num timesteps 3330, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 32s, num timesteps 3420, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 33s, num timesteps 3510, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 33s, num timesteps 3600, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 34s, num timesteps 3690, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 35s, num timesteps 3780, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 36s, num timesteps 3870, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 37s, num timesteps 3960, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 38s, num timesteps 4050, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 39s, num timesteps 4140, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 39s, num timesteps 4230, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 40s, num timesteps 4320, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 41s, num timesteps 4410, FPS 106,
+	Rewards:
+	Losses:
+INFO:root:Time: 00d 00h 00m 44s, num timesteps 4500, FPS 101,
+	Rewards: Global step mean/med rew: 1.2314/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 45s, num timesteps 4590, FPS 101,
+	Rewards: Global step mean/med rew: 1.2314/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 45s, num timesteps 4680, FPS 102,
+	Rewards: Global step mean/med rew: 1.2314/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 46s, num timesteps 4770, FPS 102,
+	Rewards: Global step mean/med rew: 1.7741/0.4583,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 47s, num timesteps 4860, FPS 102,
+	Rewards: Global step mean/med rew: 1.7741/0.4583,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 48s, num timesteps 4950, FPS 102,
+	Rewards: Global step mean/med rew: 1.8189/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 49s, num timesteps 5040, FPS 102,
+	Rewards: Global step mean/med rew: 1.8189/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 50s, num timesteps 5130, FPS 102,
+	Rewards: Global step mean/med rew: 1.8189/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 50s, num timesteps 5220, FPS 102,
+	Rewards: Global step mean/med rew: 1.8966/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 51s, num timesteps 5310, FPS 102,
+	Rewards: Global step mean/med rew: 1.8966/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 52s, num timesteps 5400, FPS 102,
+	Rewards: Global step mean/med rew: 1.8994/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 53s, num timesteps 5490, FPS 102,
+	Rewards: Global step mean/med rew: 1.8994/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 54s, num timesteps 5580, FPS 102,
+	Rewards: Global step mean/med rew: 1.8994/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 55s, num timesteps 5670, FPS 102,
+	Rewards: Global step mean/med rew: 1.8393/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 55s, num timesteps 5760, FPS 102,
+	Rewards: Global step mean/med rew: 1.8393/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 56s, num timesteps 5850, FPS 102,
+	Rewards: Global step mean/med rew: 1.8085/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 57s, num timesteps 5940, FPS 102,
+	Rewards: Global step mean/med rew: 1.8085/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 58s, num timesteps 6030, FPS 103,
+	Rewards: Global step mean/med rew: 1.8085/0.6718,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 00m 59s, num timesteps 6120, FPS 103,
+	Rewards: Global step mean/med rew: 1.7579/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 00s, num timesteps 6210, FPS 103,
+	Rewards: Global step mean/med rew: 1.7579/0.4661,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 01s, num timesteps 6300, FPS 103,
+	Rewards: Global step mean/med rew: 1.7092/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 01s, num timesteps 6390, FPS 103,
+	Rewards: Global step mean/med rew: 1.7092/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 02s, num timesteps 6480, FPS 103,
+	Rewards: Global step mean/med rew: 1.7092/0.4622,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 03s, num timesteps 6570, FPS 103,
+	Rewards: Global step mean/med rew: 1.6634/0.4583,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 04s, num timesteps 6660, FPS 103,
+	Rewards: Global step mean/med rew: 1.6634/0.4583,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 05s, num timesteps 6750, FPS 103,
+	Rewards: Global step mean/med rew: 1.6213/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 06s, num timesteps 6840, FPS 103,
+	Rewards: Global step mean/med rew: 1.6213/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 07s, num timesteps 6930, FPS 103,
+	Rewards: Global step mean/med rew: 1.6213/0.4549,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 07s, num timesteps 7020, FPS 103,
+	Rewards: Global step mean/med rew: 1.5763/0.4514,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 08s, num timesteps 7110, FPS 103,
+	Rewards: Global step mean/med rew: 1.5763/0.4514,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 09s, num timesteps 7200, FPS 103,
+	Rewards: Global step mean/med rew: 1.5275/0.4465,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 10s, num timesteps 7290, FPS 103,
+	Rewards: Global step mean/med rew: 1.5275/0.4465,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 11s, num timesteps 7380, FPS 103,
+	Rewards: Global step mean/med rew: 1.5275/0.4465,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 12s, num timesteps 7470, FPS 103,
+	Rewards: Global step mean/med rew: 1.4894/0.4417,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 13s, num timesteps 7560, FPS 103,
+	Rewards: Global step mean/med rew: 1.4894/0.4417,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 13s, num timesteps 7650, FPS 103,
+	Rewards: Global step mean/med rew: 1.4457/0.4210,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 14s, num timesteps 7740, FPS 103,
+	Rewards: Global step mean/med rew: 1.4457/0.4210,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 15s, num timesteps 7830, FPS 103,
+	Rewards: Global step mean/med rew: 1.4457/0.4210,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 16s, num timesteps 7920, FPS 103,
+	Rewards: Global step mean/med rew: 1.4072/0.4003,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 17s, num timesteps 8010, FPS 103,
+	Rewards: Global step mean/med rew: 1.4072/0.4003,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 18s, num timesteps 8100, FPS 103,
+	Rewards: Global step mean/med rew: 1.3697/0.3983,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 19s, num timesteps 8190, FPS 103,
+	Rewards: Global step mean/med rew: 1.3697/0.3983,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 19s, num timesteps 8280, FPS 103,
+	Rewards: Global step mean/med rew: 1.3697/0.3983,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 20s, num timesteps 8370, FPS 103,
+	Rewards: Global step mean/med rew: 1.3326/0.3964,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 21s, num timesteps 8460, FPS 103,
+	Rewards: Global step mean/med rew: 1.3326/0.3964,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 22s, num timesteps 8550, FPS 103,
+	Rewards: Global step mean/med rew: 1.2976/0.3956,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 23s, num timesteps 8640, FPS 103,
+	Rewards: Global step mean/med rew: 1.2976/0.3956,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 24s, num timesteps 8730, FPS 103,
+	Rewards: Global step mean/med rew: 1.2976/0.3956,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 25s, num timesteps 8820, FPS 103,
+	Rewards: Global step mean/med rew: 1.2643/0.3947,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 26s, num timesteps 8910, FPS 103,
+	Rewards: Global step mean/med rew: 1.2643/0.3947,  Global eps mean/med/min/max eps rew: 24.628/24.680/24.287/24.680,
+	Losses:
+INFO:root:Time: 00d 00h 01m 35s, num timesteps 9000, FPS 94,
+	Rewards: Global step mean/med rew: 1.2327/0.3881,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 36s, num timesteps 9090, FPS 94,
+	Rewards: Global step mean/med rew: 1.2327/0.3881,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 36s, num timesteps 9180, FPS 94,
+	Rewards: Global step mean/med rew: 1.2327/0.3881,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 37s, num timesteps 9270, FPS 94,
+	Rewards: Global step mean/med rew: 1.3833/0.3947,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 38s, num timesteps 9360, FPS 94,
+	Rewards: Global step mean/med rew: 1.3833/0.3947,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 39s, num timesteps 9450, FPS 95,
+	Rewards: Global step mean/med rew: 1.7225/0.3956,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 40s, num timesteps 9540, FPS 95,
+	Rewards: Global step mean/med rew: 1.7225/0.3956,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 41s, num timesteps 9630, FPS 95,
+	Rewards: Global step mean/med rew: 1.7225/0.3956,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 41s, num timesteps 9720, FPS 95,
+	Rewards: Global step mean/med rew: 1.8210/0.3964,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 42s, num timesteps 9810, FPS 95,
+	Rewards: Global step mean/med rew: 1.8210/0.3964,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 43s, num timesteps 9900, FPS 95,
+	Rewards: Global step mean/med rew: 1.8779/0.3983,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 44s, num timesteps 9990, FPS 95,
+	Rewards: Global step mean/med rew: 1.8779/0.3983,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 45s, num timesteps 10080, FPS 95,
+	Rewards: Global step mean/med rew: 1.8779/0.3983,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 46s, num timesteps 10170, FPS 95,
+	Rewards: Global step mean/med rew: 1.8884/0.4003,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 47s, num timesteps 10260, FPS 95,
+	Rewards: Global step mean/med rew: 1.8884/0.4003,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 47s, num timesteps 10350, FPS 95,
+	Rewards: Global step mean/med rew: 1.9029/0.4210,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 48s, num timesteps 10440, FPS 95,
+	Rewards: Global step mean/med rew: 1.9029/0.4210,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 49s, num timesteps 10530, FPS 96,
+	Rewards: Global step mean/med rew: 1.9029/0.4210,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 50s, num timesteps 10620, FPS 96,
+	Rewards: Global step mean/med rew: 1.9263/0.4417,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 51s, num timesteps 10710, FPS 96,
+	Rewards: Global step mean/med rew: 1.9263/0.4417,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 52s, num timesteps 10800, FPS 96,
+	Rewards: Global step mean/med rew: 1.9102/0.4465,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 53s, num timesteps 10890, FPS 96,
+	Rewards: Global step mean/med rew: 1.9102/0.4465,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 53s, num timesteps 10980, FPS 96,
+	Rewards: Global step mean/med rew: 1.9102/0.4465,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 54s, num timesteps 11070, FPS 96,
+	Rewards: Global step mean/med rew: 1.9213/0.4514,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 55s, num timesteps 11160, FPS 96,
+	Rewards: Global step mean/med rew: 1.9213/0.4514,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 56s, num timesteps 11250, FPS 96,
+	Rewards: Global step mean/med rew: 1.9167/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 57s, num timesteps 11340, FPS 96,
+	Rewards: Global step mean/med rew: 1.9167/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 58s, num timesteps 11430, FPS 96,
+	Rewards: Global step mean/med rew: 1.9167/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 01m 59s, num timesteps 11520, FPS 96,
+	Rewards: Global step mean/med rew: 1.9336/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 00s, num timesteps 11610, FPS 96,
+	Rewards: Global step mean/med rew: 1.9336/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 00s, num timesteps 11700, FPS 96,
+	Rewards: Global step mean/med rew: 1.9388/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 01s, num timesteps 11790, FPS 96,
+	Rewards: Global step mean/med rew: 1.9388/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 02s, num timesteps 11880, FPS 96,
+	Rewards: Global step mean/med rew: 1.9388/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 03s, num timesteps 11970, FPS 96,
+	Rewards: Global step mean/med rew: 1.9370/0.4661,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 04s, num timesteps 12060, FPS 96,
+	Rewards: Global step mean/med rew: 1.9370/0.4661,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 05s, num timesteps 12150, FPS 96,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 06s, num timesteps 12240, FPS 96,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 07s, num timesteps 12330, FPS 97,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 07s, num timesteps 12420, FPS 97,
+	Rewards: Global step mean/med rew: 1.8704/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 08s, num timesteps 12510, FPS 97,
+	Rewards: Global step mean/med rew: 1.8704/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 09s, num timesteps 12600, FPS 97,
+	Rewards: Global step mean/med rew: 1.8466/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 10s, num timesteps 12690, FPS 97,
+	Rewards: Global step mean/med rew: 1.8466/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 11s, num timesteps 12780, FPS 97,
+	Rewards: Global step mean/med rew: 1.8466/0.4622,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 12s, num timesteps 12870, FPS 97,
+	Rewards: Global step mean/med rew: 1.8191/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 13s, num timesteps 12960, FPS 97,
+	Rewards: Global step mean/med rew: 1.8191/0.4583,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 14s, num timesteps 13050, FPS 97,
+	Rewards: Global step mean/med rew: 1.7900/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 14s, num timesteps 13140, FPS 97,
+	Rewards: Global step mean/med rew: 1.7900/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 15s, num timesteps 13230, FPS 97,
+	Rewards: Global step mean/med rew: 1.7900/0.4549,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 16s, num timesteps 13320, FPS 97,
+	Rewards: Global step mean/med rew: 1.7630/0.4514,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 17s, num timesteps 13410, FPS 97,
+	Rewards: Global step mean/med rew: 1.7630/0.4514,  Global eps mean/med/min/max eps rew: 24.654/24.680/24.287/24.685,
+	Losses:
+INFO:root:Time: 00d 00h 02m 22s, num timesteps 13500, FPS 94,
+	Rewards: Global step mean/med rew: 1.7362/0.4465,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 22s, num timesteps 13590, FPS 95,
+	Rewards: Global step mean/med rew: 1.7362/0.4465,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 23s, num timesteps 13680, FPS 95,
+	Rewards: Global step mean/med rew: 1.7362/0.4465,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 24s, num timesteps 13770, FPS 95,
+	Rewards: Global step mean/med rew: 1.8373/0.4514,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 25s, num timesteps 13860, FPS 95,
+	Rewards: Global step mean/med rew: 1.8373/0.4514,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 26s, num timesteps 13950, FPS 95,
+	Rewards: Global step mean/med rew: 1.8701/0.4549,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 27s, num timesteps 14040, FPS 95,
+	Rewards: Global step mean/med rew: 1.8701/0.4549,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 27s, num timesteps 14130, FPS 95,
+	Rewards: Global step mean/med rew: 1.8701/0.4549,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 28s, num timesteps 14220, FPS 95,
+	Rewards: Global step mean/med rew: 1.8933/0.4583,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 29s, num timesteps 14310, FPS 95,
+	Rewards: Global step mean/med rew: 1.8933/0.4583,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 30s, num timesteps 14400, FPS 95,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 31s, num timesteps 14490, FPS 95,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 32s, num timesteps 14580, FPS 95,
+	Rewards: Global step mean/med rew: 1.9024/0.4622,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 33s, num timesteps 14670, FPS 95,
+	Rewards: Global step mean/med rew: 1.9034/0.4661,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 33s, num timesteps 14760, FPS 95,
+	Rewards: Global step mean/med rew: 1.9034/0.4661,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 34s, num timesteps 14850, FPS 95,
+	Rewards: Global step mean/med rew: 1.9179/0.5010,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 35s, num timesteps 14940, FPS 95,
+	Rewards: Global step mean/med rew: 1.9179/0.5010,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 36s, num timesteps 15030, FPS 96,
+	Rewards: Global step mean/med rew: 1.9179/0.5010,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 37s, num timesteps 15120, FPS 96,
+	Rewards: Global step mean/med rew: 1.9153/0.5358,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 38s, num timesteps 15210, FPS 96,
+	Rewards: Global step mean/med rew: 1.9153/0.5358,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 39s, num timesteps 15300, FPS 96,
+	Rewards: Global step mean/med rew: 1.9162/0.7067,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 39s, num timesteps 15390, FPS 96,
+	Rewards: Global step mean/med rew: 1.9162/0.7067,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 40s, num timesteps 15480, FPS 96,
+	Rewards: Global step mean/med rew: 1.9162/0.7067,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 41s, num timesteps 15570, FPS 96,
+	Rewards: Global step mean/med rew: 1.9167/0.8775,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 42s, num timesteps 15660, FPS 96,
+	Rewards: Global step mean/med rew: 1.9167/0.8775,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 43s, num timesteps 15750, FPS 96,
+	Rewards: Global step mean/med rew: 1.9119/0.9589,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 44s, num timesteps 15840, FPS 96,
+	Rewards: Global step mean/med rew: 1.9119/0.9589,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 45s, num timesteps 15930, FPS 96,
+	Rewards: Global step mean/med rew: 1.9119/0.9589,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 45s, num timesteps 16020, FPS 96,
+	Rewards: Global step mean/med rew: 1.9144/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 46s, num timesteps 16110, FPS 96,
+	Rewards: Global step mean/med rew: 1.9144/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 47s, num timesteps 16200, FPS 96,
+	Rewards: Global step mean/med rew: 1.9076/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 48s, num timesteps 16290, FPS 96,
+	Rewards: Global step mean/med rew: 1.9076/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 49s, num timesteps 16380, FPS 96,
+	Rewards: Global step mean/med rew: 1.9076/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 50s, num timesteps 16470, FPS 96,
+	Rewards: Global step mean/med rew: 1.8903/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 51s, num timesteps 16560, FPS 96,
+	Rewards: Global step mean/med rew: 1.8903/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 52s, num timesteps 16650, FPS 96,
+	Rewards: Global step mean/med rew: 1.8767/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 52s, num timesteps 16740, FPS 96,
+	Rewards: Global step mean/med rew: 1.8767/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 53s, num timesteps 16830, FPS 96,
+	Rewards: Global step mean/med rew: 1.8767/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 54s, num timesteps 16920, FPS 96,
+	Rewards: Global step mean/med rew: 1.8675/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 55s, num timesteps 17010, FPS 96,
+	Rewards: Global step mean/med rew: 1.8675/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 56s, num timesteps 17100, FPS 96,
+	Rewards: Global step mean/med rew: 1.8608/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 57s, num timesteps 17190, FPS 96,
+	Rewards: Global step mean/med rew: 1.8608/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 58s, num timesteps 17280, FPS 97,
+	Rewards: Global step mean/med rew: 1.8608/1.0964,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 59s, num timesteps 17370, FPS 97,
+	Rewards: Global step mean/med rew: 1.8451/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 02m 59s, num timesteps 17460, FPS 97,
+	Rewards: Global step mean/med rew: 1.8451/1.0403,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 00s, num timesteps 17550, FPS 97,
+	Rewards: Global step mean/med rew: 1.8298/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 01s, num timesteps 17640, FPS 97,
+	Rewards: Global step mean/med rew: 1.8298/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 02s, num timesteps 17730, FPS 97,
+	Rewards: Global step mean/med rew: 1.8298/0.9631,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 03s, num timesteps 17820, FPS 97,
+	Rewards: Global step mean/med rew: 1.8171/0.8858,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 04s, num timesteps 17910, FPS 97,
+	Rewards: Global step mean/med rew: 1.8171/0.8858,  Global eps mean/med/min/max eps rew: 34.725/24.683/24.287/60.260,
+	Losses:
+INFO:root:Time: 00d 00h 03m 08s, num timesteps 18000, FPS 95,
+	Rewards: Global step mean/med rew: 1.8095/0.9631,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 09s, num timesteps 18090, FPS 95,
+	Rewards: Global step mean/med rew: 1.8095/0.9631,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 10s, num timesteps 18180, FPS 95,
+	Rewards: Global step mean/med rew: 1.8095/0.9631,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 11s, num timesteps 18270, FPS 95,
+	Rewards: Global step mean/med rew: 1.8959/1.0403,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 12s, num timesteps 18360, FPS 95,
+	Rewards: Global step mean/med rew: 1.8959/1.0403,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 13s, num timesteps 18450, FPS 95,
+	Rewards: Global step mean/med rew: 1.9955/1.0964,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 13s, num timesteps 18540, FPS 95,
+	Rewards: Global step mean/med rew: 1.9955/1.0964,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 14s, num timesteps 18630, FPS 95,
+	Rewards: Global step mean/med rew: 1.9955/1.0964,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 15s, num timesteps 18720, FPS 95,
+	Rewards: Global step mean/med rew: 2.0186/1.1525,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 16s, num timesteps 18810, FPS 95,
+	Rewards: Global step mean/med rew: 2.0186/1.1525,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 17s, num timesteps 18900, FPS 95,
+	Rewards: Global step mean/med rew: 2.0545/1.1669,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 18s, num timesteps 18990, FPS 95,
+	Rewards: Global step mean/med rew: 2.0545/1.1669,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 19s, num timesteps 19080, FPS 95,
+	Rewards: Global step mean/med rew: 2.0545/1.1669,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 19s, num timesteps 19170, FPS 95,
+	Rewards: Global step mean/med rew: 2.0822/1.1814,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 20s, num timesteps 19260, FPS 95,
+	Rewards: Global step mean/med rew: 2.0822/1.1814,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 21s, num timesteps 19350, FPS 95,
+	Rewards: Global step mean/med rew: 2.1016/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 22s, num timesteps 19440, FPS 95,
+	Rewards: Global step mean/med rew: 2.1016/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 23s, num timesteps 19530, FPS 96,
+	Rewards: Global step mean/med rew: 2.1016/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 24s, num timesteps 19620, FPS 96,
+	Rewards: Global step mean/med rew: 2.1011/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 25s, num timesteps 19710, FPS 96,
+	Rewards: Global step mean/med rew: 2.1011/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 25s, num timesteps 19800, FPS 96,
+	Rewards: Global step mean/med rew: 2.0882/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 26s, num timesteps 19890, FPS 96,
+	Rewards: Global step mean/med rew: 2.0882/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 27s, num timesteps 19980, FPS 96,
+	Rewards: Global step mean/med rew: 2.0882/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 28s, num timesteps 20070, FPS 96,
+	Rewards: Global step mean/med rew: 2.1170/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 29s, num timesteps 20160, FPS 96,
+	Rewards: Global step mean/med rew: 2.1170/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 30s, num timesteps 20250, FPS 96,
+	Rewards: Global step mean/med rew: 2.1391/1.2693,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 31s, num timesteps 20340, FPS 96,
+	Rewards: Global step mean/med rew: 2.1391/1.2693,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 31s, num timesteps 20430, FPS 96,
+	Rewards: Global step mean/med rew: 2.1391/1.2693,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 32s, num timesteps 20520, FPS 96,
+	Rewards: Global step mean/med rew: 2.1315/1.3339,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 33s, num timesteps 20610, FPS 96,
+	Rewards: Global step mean/med rew: 2.1315/1.3339,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 34s, num timesteps 20700, FPS 96,
+	Rewards: Global step mean/med rew: 2.1316/1.3461,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 35s, num timesteps 20790, FPS 96,
+	Rewards: Global step mean/med rew: 2.1316/1.3461,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 36s, num timesteps 20880, FPS 96,
+	Rewards: Global step mean/med rew: 2.1316/1.3461,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 37s, num timesteps 20970, FPS 96,
+	Rewards: Global step mean/med rew: 2.1228/1.3339,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 37s, num timesteps 21060, FPS 96,
+	Rewards: Global step mean/med rew: 2.1228/1.3339,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 38s, num timesteps 21150, FPS 96,
+	Rewards: Global step mean/med rew: 2.1045/1.3236,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 39s, num timesteps 21240, FPS 96,
+	Rewards: Global step mean/med rew: 2.1045/1.3236,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 40s, num timesteps 21330, FPS 96,
+	Rewards: Global step mean/med rew: 2.1045/1.3236,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 41s, num timesteps 21420, FPS 96,
+	Rewards: Global step mean/med rew: 2.0883/1.3133,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 42s, num timesteps 21510, FPS 96,
+	Rewards: Global step mean/med rew: 2.0883/1.3133,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 43s, num timesteps 21600, FPS 96,
+	Rewards: Global step mean/med rew: 2.0731/1.2590,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 43s, num timesteps 21690, FPS 96,
+	Rewards: Global step mean/med rew: 2.0731/1.2590,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 44s, num timesteps 21780, FPS 96,
+	Rewards: Global step mean/med rew: 2.0731/1.2590,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 45s, num timesteps 21870, FPS 96,
+	Rewards: Global step mean/med rew: 2.0562/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 46s, num timesteps 21960, FPS 96,
+	Rewards: Global step mean/med rew: 2.0562/1.2047,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 47s, num timesteps 22050, FPS 96,
+	Rewards: Global step mean/med rew: 2.0387/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 48s, num timesteps 22140, FPS 96,
+	Rewards: Global step mean/med rew: 2.0387/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 49s, num timesteps 22230, FPS 97,
+	Rewards: Global step mean/med rew: 2.0387/1.1931,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 50s, num timesteps 22320, FPS 97,
+	Rewards: Global step mean/med rew: 2.0210/1.1814,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Time: 00d 00h 03m 50s, num timesteps 22410, FPS 97,
+	Rewards: Global step mean/med rew: 2.0210/1.1814,  Global eps mean/med/min/max eps rew: 36.190/24.685/24.287/71.875,
+	Losses:
+INFO:root:Final Exp Area: 
+8.25189, 15.86250, 19.97972, 23.20089, 25.53183, 27.66239, 29.48278, 30.64728, 32.62800, 34.35939, 35.75856, 36.95228, 37.76761, 38.04178, 38.45867, 38.98067, 39.25633, 39.48094, 39.74289, 40.03083, 
+Final Exp Ratio: 
+0.20855, 0.37012, 0.46933, 0.53993, 0.58999, 0.62872, 0.66761, 0.69262, 0.72695, 0.75970, 0.78344, 0.80231, 0.81628, 0.81972, 0.82605, 0.83336, 0.83711, 0.84000, 0.84328, 0.84650, 

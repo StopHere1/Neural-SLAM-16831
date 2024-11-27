@@ -152,3 +152,8 @@ dmypy.json
 # files
 settings.json
 local_memo.txt
+
+# data
+/data/*
+/pretrained_models/*
+/tmp/*
