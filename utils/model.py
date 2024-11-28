@@ -3,6 +3,72 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
+# naive implementation of compute_frontiers
+# def compute_frontiers(map):
+#     """
+#     Input:
+#         `map` FloatTensor(4 h, w)
+#     Output:
+#         `frontiers` FloatTensor(1, h, w)
+#     """
+#     # kernel = torch.tensor([[0, 1, 0], [1, 0, 1], [0, 1, 0]],
+#     #                        dtype=torch.float32, device=global_input.device)
+#     # kernel = kernel.view(1, 1, 3, 3)
+#     # frontiers = F.conv2d(global_input, kernel, padding=1)
+#     # frontiers = (frontiers > 0).float()
+#     # return frontiers
+
+#     # free spaces:
+#     obstacle_map = map[0, :, :]
+#     explored_map = map[1, :, :]
+#     explored_free_space = (obstacle_map <= 0.2).float() * (explored_map >= 0.8).float()
+#     # import pdb; pdb.set_trace()
+
+#     # frontiers:
+#     # frontier is a grid cell that is adjacent to an unknown cell, and itself is free
+#     frontiers_map = torch.zeros_like(explored_free_space)
+#     for i in range(0, explored_free_space.size(0) - 1):
+#         for j in range(0, explored_free_space.size(1) - 1):
+#             if explored_free_space[ i, j] == 1:
+#                 # for neightbors
+#                 for ni, nj in get_grid_neighbours(i, j):
+#                     if explored_map[ni, nj] < 0.2:
+#                         frontiers_map[ i, j] = 1.0
+#                         break
+#     # import pdb; pdb.set_trace()
+#     return frontiers_map
+
+# vectorized implementation of compute_frontiers
+def compute_frontiers(map):
+    """
+    Input:
+        `map` FloatTensor(4, h, w)
+    Output:
+        `frontiers` FloatTensor(1, h, w)
+    """
+    # free spaces:
+    obstacle_map = map[0, :, :]
+    explored_map = map[1, :, :]
+    explored_free_space = (obstacle_map <= 0.2).float() * (explored_map >= 0.8).float()
+
+    # Create a padded version of the explored map to handle edge cases
+    padded_explored_map = F.pad(explored_map, (1, 1, 1, 1), mode='constant', value=0)
+    padded_explored_free_space = F.pad(explored_free_space, (1, 1, 1, 1), mode='constant', value=0)
+
+    # Create a kernel to check for adjacent unknown cells
+    kernel = torch.tensor([[0, 1, 0], [1, 0, 1], [0, 1, 0]], dtype=torch.float32, device=map.device).view(1, 1, 3, 3)
+
+    # Convolve the padded explored map with the kernel
+    adjacent_unknowns = F.conv2d(padded_explored_map.unsqueeze(0).unsqueeze(0), kernel, padding=0).squeeze()
+
+    # Identify frontiers: free cells adjacent to unknown cells
+    frontiers_map = (padded_explored_free_space[1:-1, 1:-1] == 1) & (adjacent_unknowns[1:-1, 1:-1] > 0)
+    frontiers_map = frontiers_map.float()
+
+    return frontiers_map
+
+def get_grid_neighbours( i, j):
+    return [(i-1, j), (i+1, j), (i, j-1), (i, j+1)]
 
 def get_grid(pose, grid_size, device):
     """

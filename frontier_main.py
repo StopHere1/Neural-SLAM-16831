@@ -16,7 +16,7 @@ from env import make_vec_envs
 from utils.storage import GlobalRolloutStorage, FIFOMemory
 from utils.optimization import get_optimizer
 from utils.frontiermodel import compute_frontiers
-from model import RL_Policy, Local_IL_Policy, Neural_SLAM_Module
+from model import RL_Policy_Frontiers, Local_IL_Policy, Neural_SLAM_Module
 
 import algo
 
@@ -213,7 +213,7 @@ def main():
                                    args.slam_optimizer)
 
     # Global policy
-    g_policy = RL_Policy(g_observation_space.shape, g_action_space,
+    g_policy = RL_Policy_Frontiers(g_observation_space.shape, g_action_space,
                          base_kwargs={'recurrent': args.use_recurrent_global,
                                       'hidden_size': g_hidden_size,
                                       'downscaling': args.global_downscaling
@@ -467,6 +467,7 @@ def main():
                 #     nn.MaxPool2d(args.global_downscaling)(full_map)
                 global_input[:, 0:4, :, :] = local_map
                 global_input[:, 5:9, :, :] = nn.MaxPool2d(args.global_downscaling)(full_map)
+                # import pdb;pdb.set_trace()
                 for e in range(num_scenes):
                     global_frontiers = compute_frontiers(full_map[e])
                     global_input[e, 9, :, :] = nn.MaxPool2d(args.global_downscaling)(global_frontiers.unsqueeze(0))
