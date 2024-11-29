@@ -297,6 +297,7 @@ def main():
 
     global_input[:, 0:4, :, :] = local_map.detach()
     global_input[:, 5:9, :, :] = nn.MaxPool2d(args.global_downscaling)(full_map)
+    # print("num_scenes: " , num_scenes)
     for e in range(num_scenes):
         global_frontiers = compute_frontiers(full_map[e])
         global_input[e, 9, :, :] = nn.MaxPool2d(args.global_downscaling)(global_frontiers.unsqueeze(0))
@@ -340,7 +341,7 @@ def main():
 
     for ep_num in range(num_episodes):
         for step in range(args.max_episode_length):
-            print("episode: {}, step: {}".format(ep_num, step))
+            # print("episode: {}, step: {}".format(ep_num, step))
 
             total_num_steps += 1
 

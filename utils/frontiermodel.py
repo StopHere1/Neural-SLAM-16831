@@ -2,7 +2,7 @@ import numpy as np
 import torch
 from torch import nn
 from torch.nn import functional as F
-
+import time
 
 def compute_frontiers(map):
     """
@@ -18,6 +18,7 @@ def compute_frontiers(map):
     # frontiers = (frontiers > 0).float()
     # return frontiers
 
+    # start = time.time()
     # free spaces:
     obstacle_map = map[0, :, :]
     explored_map = map[1, :, :]
@@ -36,6 +37,8 @@ def compute_frontiers(map):
                         frontiers_map[ i, j] = 1.0
                         break
     # import pdb; pdb.set_trace()
+    # end = time.time()
+    # print("compute_frontiers: ", end - start)
     return frontiers_map
 
 def get_grid_neighbours( i, j):
