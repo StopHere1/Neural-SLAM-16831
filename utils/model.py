@@ -39,13 +39,14 @@ from torch.nn import functional as F
 #     return frontiers_map
 
 # vectorized implementation of compute_frontiers
-def compute_frontiers(map):
+def compute_frontiers(map, device='cuda'):
     """
     Input:
         `map` FloatTensor(4, h, w)
     Output:
         `frontiers` FloatTensor(1, h, w)
     """
+    map = map.to(device)
     # free spaces:
     obstacle_map = map[0, :, :]
     explored_map = map[1, :, :]
@@ -56,7 +57,7 @@ def compute_frontiers(map):
     padded_explored_free_space = F.pad(explored_free_space, (1, 1, 1, 1), mode='constant', value=0)
 
     # Create a kernel to check for adjacent unknown cells
-    kernel = torch.tensor([[0, 1, 0], [1, 0, 1], [0, 1, 0]], dtype=torch.float32, device=map.device).view(1, 1, 3, 3)
+    kernel = torch.tensor([[0, 1, 0], [1, 0, 1], [0, 1, 0]], dtype=torch.float32, device=map.device).view(1, 1, 3, 3).to(device=device)
 
     # Convolve the padded explored map with the kernel
     adjacent_unknowns = F.conv2d(padded_explored_map.unsqueeze(0).unsqueeze(0), kernel, padding=0).squeeze()

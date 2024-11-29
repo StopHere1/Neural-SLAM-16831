@@ -27,6 +27,8 @@ if sys.platform == 'darwin':
     matplotlib.use("tkagg")
 import matplotlib.pyplot as plt
 
+import time
+
 torch.cuda.empty_cache()
 torch.cuda.reset_peak_memory_stats()
 
@@ -431,7 +433,9 @@ def main():
 
             # ------------------------------------------------------------------
             # Global Policy
+            
             if l_step == args.num_local_steps - 1:
+                start_time_localfrontier = time.time()
                 # For every global step, update the full and local maps
                 for e in range(num_scenes):
                     full_map[e, :, lmb[e, 0]:lmb[e, 1], lmb[e, 2]:lmb[e, 3]] = \
@@ -458,7 +462,9 @@ def main():
                                     torch.from_numpy(origins[e]).to(device).float()
                     # add frontiers
                     global_input[e, 4, :, :] = compute_frontiers(local_map[e])
-
+                end_time_localfrontier = time.time()
+                print("Time taken for local frontier: ", end_time_localfrontier - start_time_localfrontier)
+                
                 locs = local_pose.cpu().numpy()
                 for e in range(num_scenes):
                     global_orientation[e] = int((locs[e, 2] + 180.0) / 5.)
@@ -469,9 +475,15 @@ def main():
                 global_input[:, 5:9, :, :] = nn.MaxPool2d(args.global_downscaling)(full_map)
                 # import pdb;pdb.set_trace()
                 for e in range(num_scenes):
+                    start_time_fullfrontier = time.time()
                     global_frontiers = compute_frontiers(full_map[e])
+                    end_time_fullfrontier = time.time()
+                    print("Time taken for full frontier: ", end_time_fullfrontier - start_time_fullfrontier)
+                    start_time_move = time.time()
                     global_input[e, 9, :, :] = nn.MaxPool2d(args.global_downscaling)(global_frontiers.unsqueeze(0))
-
+                    end_time_move = time.time()
+                    print("Time taken for move: ", end_time_move - start_time_move)
+                
                 if False:
                     for i in range(4):
                         ax[i].clear()
