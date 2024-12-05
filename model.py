@@ -20,7 +20,7 @@ class Global_Policy(NNBase):
 
         self.main = nn.Sequential(
             nn.MaxPool2d(2),
-            nn.Conv2d(10, 32, 3, stride=1, padding=1),
+            nn.Conv2d(8, 32, 3, stride=1, padding=1),
             nn.ReLU(),
             nn.MaxPool2d(2),
             nn.Conv2d(32, 64, 3, stride=1, padding=1),

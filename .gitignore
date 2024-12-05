@@ -157,3 +157,5 @@ local_memo.txt
 /data/*
 /pretrained_models/*
 /tmp/*
+/frontier_models/*
+/log_files/*
